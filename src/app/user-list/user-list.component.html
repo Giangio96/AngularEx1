@@ -1,6 +1,7 @@
 <div class="uList">
-    <app-user-single></app-user-single>
-    <app-user-single></app-user-single>
-    <app-user-single></app-user-single>
+    <div class="ciclo" *ngFor="let ciccio of listaPippo">
+        <app-user-single [userBaudo]="ciccio" (cancella)="onDeletePadre($event)" ></app-user-single>
+    </div>
 
+   
 </div>
